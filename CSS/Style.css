@@ -2,7 +2,7 @@ body {
     font-family: 'DM Sans', sans-serif;
     font-size: 20px;
     color:rgba(56, 56, 56, 1);
-}
+} 
 
 /*These are the typography styles*/
 
@@ -77,4 +77,30 @@ h5 {
 
 .colorTextBlack {
     color: rgba(29, 29, 29, 1);
+}
+
+/*These are my Flexbox Styles*/
+
+.rowFlex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.columnFlex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.flexLeft{
+    align-self: flex-start;
+    justify-self: flex-end;
+}
+
+.flexEnd{
+    justify-self: flex-end;
+    align-self: flex-end;
 }
