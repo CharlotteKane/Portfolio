@@ -2,3 +2,78 @@ body {
     font-family: 'DM Sans', sans-serif;
     font-size: 20px;
 }
+
+/*These are the typography styles*/
+
+h1 {
+    font-family: 'Spectral', serif;
+    font-size: 48px;
+}
+
+h2 {
+    font-family: 'Spectral', serif;
+    font-size: 32px;
+    font-variant: small-caps;
+}
+
+h3 {
+    font-family: 'Spectral', serif;
+    font-size: 24px;
+    font-variant: small-caps;
+}
+
+h4 {
+    font-family: 'Spectral', serif;
+    font-size: 20px;
+    font-variant: small-caps;
+}
+
+h5 {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 24px;
+}
+
+.p2 {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 18px;
+}
+
+.p3 {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+}
+
+.pMobile {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 12px;
+}
+
+/*These are the color styles*/
+
+.colorBright {
+    color: rgba(242, 5, 116, 1);
+}
+
+.colorDaring {
+    color: rgba(140, 3, 67, 1);
+}
+
+.colorRefined {
+    color: rgba(1, 40, 69, 1);
+}
+
+.colorTextLight {
+    color: rgba(214, 214, 214, 1);
+}
+
+.colorTextWhite {
+    color: rgba(249, 250, 251, 1);
+}
+
+.colorTextDark {
+    color: rgba(56, 56, 56, 1);
+}
+
+.colorTextBlack {
+    color: rgba(29, 29, 29, 1);
+}
