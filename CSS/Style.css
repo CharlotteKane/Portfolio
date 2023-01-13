@@ -13,6 +13,26 @@ header {
 
 a { text-decoration: none; }
 
+.skillCard {
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.skillCard p {
+    max-width: 300px;
+    text-align: left;
+    align-self: flex-start;
+}
+
+.skillCard img {
+    width: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 12px;
+}
+
 #socialBar {
     margin: 16px 8vw 0px 0px;
 }
