@@ -8,13 +8,13 @@ body {
 header {
     background:  linear-gradient(180deg, rgba(238, 238, 238, 0) 0%, #F9FAFB 100%), linear-gradient(267.28deg, #012845 0%, #FFFFFF 50.43%, #F20574 99.83%);
     backdrop-filter: blur(210px);
-    padding: 12px;
+    padding: 4px;
 }
 
 a { text-decoration: none; }
 
 #socialBar {
-    margin: 28px 10vw 0px 0px;
+    margin: 16px 8vw 0px 0px;
 }
  
 /*These are typography styles*/
@@ -29,6 +29,7 @@ h2 {
     font-size: 32px;
     font-variant: small-caps;
     margin: 4px;
+    line-height: 32px;
 }
 
 h3 {
@@ -116,4 +117,14 @@ p{
 .flexEnd{
     justify-self: flex-end;
     align-self: flex-end;
+}
+
+/* These are average document paddingsizes */
+
+.paddingMedium {
+    padding: 12px;
+}
+
+.spacerSmall {
+    height: 12px;
 }
