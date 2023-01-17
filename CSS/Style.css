@@ -89,6 +89,15 @@ a { text-decoration: none; }
     width: 900px;
 }
 
+.caseStudyImageFlip {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    height: 300px;
+    width: 900px;
+}
+
 .caseStudy {
     display: flex;
     align-items: center;
@@ -103,9 +112,15 @@ a { text-decoration: none; }
     width: 50%;
 }
 
+.caseStudyTextFlip {
+    width: 50%;
+    justify-self: flex-end;
+    text-align: right;
+}
+
   .borderGradient{
     background: linear-gradient(white, white) padding-box,
-                linear-gradient(to bottom, #F20574, #012845) border-box;
+                linear-gradient(to bottom, #F20574, #8C0343) border-box;
     border-radius: 12px;
     border: 2px solid transparent;
   }
@@ -230,6 +245,10 @@ p{
     height: 12px;
 }
 
+.spacerMedium {
+    height: 40px;
+}
+
 .spacerLarge {
     height: 60px;
 }
@@ -247,5 +266,9 @@ p{
 
 .pushBack {
     position: absolute;
-    z-index: -2;
+    z-index: -1;
+}
+
+.halfWidth {
+    width: 50%;
 }
