@@ -162,7 +162,7 @@ p{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .flexEnd{
@@ -170,7 +170,7 @@ p{
     align-self: flex-end;
 }
 
-/* These are average document paddingsizes */
+/* These are the spacing elements */
 
 .paddingMedium {
     padding: 12px;
@@ -188,4 +188,9 @@ p{
     width: 100%;
     margin-left: 60px;
     margin-bottom: 24px;
+}
+
+.pushBack {
+    position: absolute;
+    z-index: -2;
 }
