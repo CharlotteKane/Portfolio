@@ -118,12 +118,18 @@ a { text-decoration: none; }
     text-align: right;
 }
 
-  .borderGradient{
+.borderGradient{
     background: linear-gradient(white, white) padding-box,
                 linear-gradient(to bottom, #F20574, #8C0343) border-box;
     border-radius: 12px;
-    border: 2px solid transparent;
-  }
+      border: 2px solid transparent;
+}
+
+.hoverStudy:hover .caseStudy{
+    background:  rgba(242, 5, 116, 0.06);
+    border-radius: 2px solid;
+    border-color:rgba(140, 3, 67, 1);
+}
 
 
 
