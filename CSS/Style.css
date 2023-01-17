@@ -16,12 +16,13 @@ a { text-decoration: none; }
 
 .sectionTitle {
     position:relative;
-    padding-bottom: 4px;
+    padding-bottom: 0px;
     text-decoration: none;
+    align-self: flex-start;
+    justify-self: flex-start;
 }
 
 .sectionTitle::after {
-    background: #f00;
     background: linear-gradient(269.95deg, #F20574 2.54%, #012845 100.4%);  
     content: "";
     position: absolute;
@@ -35,7 +36,7 @@ a { text-decoration: none; }
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 30px;
+    margin: 0px 30px 30px 30px;
 }
 
 .skillCard p {
@@ -56,7 +57,11 @@ a { text-decoration: none; }
     justify-content: space-around;
     flex-wrap: wrap;
     max-width: 1100px;
-    margin-top: 90px;
+    margin-top: 16px;
+}
+
+#skillTitle {
+    max-width: fit-content;
 }
 
 #socialBar {
@@ -173,4 +178,14 @@ p{
 
 .spacerSmall {
     height: 12px;
+}
+
+.spacerLarge {
+    height: 60px;
+}
+
+.newFlexRow {
+    width: 100%;
+    margin-left: 60px;
+    margin-bottom: 24px;
 }
