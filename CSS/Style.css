@@ -133,6 +133,22 @@ a { text-decoration: none; }
 
 
 
+/* Tech Skills Styles */
+
+.chips {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 2px 12px;
+gap: 10px;
+background: #F20574;
+border-radius: 68px;
+color: #F9FAFB;
+}
+
+
+
 /*Typography styles*/
 
 h1 {
