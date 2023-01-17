@@ -20,6 +20,7 @@ a { text-decoration: none; }
     text-decoration: none;
     align-self: flex-start;
     justify-self: flex-start;
+    max-width: fit-content;
 }
 
 .sectionTitle::after {
@@ -30,6 +31,21 @@ a { text-decoration: none; }
     left: 0;
     height: 2px;
     width: 100%;
+}
+
+#socialBar {
+    margin: 16px 8vw 0px 0px;
+}
+ 
+
+
+/* Skill Card Styles */
+
+#skillSection {
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin-top: 16px;
 }
 
 .skillCard {
@@ -53,22 +69,71 @@ a { text-decoration: none; }
     padding-right: 12px;
 }
 
-#skillSection {
+
+
+/* Case Study Styles */
+
+#caseStudySection {
     justify-content: space-around;
     flex-wrap: wrap;
     max-width: 1100px;
     margin-top: 16px;
 }
 
-#skillTitle {
-    max-width: fit-content;
+.caseStudyImage {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 300px;
+    width: 900px;
 }
 
-#socialBar {
-    margin: 16px 8vw 0px 0px;
+.caseStudyImageFlip {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    height: 300px;
+    width: 900px;
 }
- 
-/*These are typography styles*/
+
+.caseStudy {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 900px;
+    height: 215px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.caseStudyText {
+    width: 50%;
+}
+
+.caseStudyTextFlip {
+    width: 50%;
+    justify-self: flex-end;
+    text-align: right;
+}
+
+.borderGradient{
+    background: linear-gradient(white, white) padding-box,
+                linear-gradient(to bottom, #F20574, #8C0343) border-box;
+    border-radius: 12px;
+      border: 2px solid transparent;
+}
+
+.hoverStudy:hover .caseStudy{
+    background:  rgba(242, 5, 116, 0.06);
+    border-radius: 2px solid;
+    border-color:rgba(140, 3, 67, 1);
+}
+
+
+
+/*Typography styles*/
 
 h1 {
     font-family: 'Spectral', serif;
@@ -119,7 +184,9 @@ p{
     font-size: 12px;
 }
 
-/*These are color styles*/
+
+
+/*Color styles*/
 
 .colorBright {
     color: rgba(242, 5, 116, 1);
@@ -149,7 +216,9 @@ p{
     color: rgba(29, 29, 29, 1);
 }
 
-/*These are Flexbox Styles*/
+
+
+/*Flexbox Styles*/
 
 .rowFlex {
     display: flex;
@@ -170,7 +239,9 @@ p{
     align-self: flex-end;
 }
 
-/* These are the spacing elements */
+
+
+/*Spacing Elements */
 
 .paddingMedium {
     padding: 12px;
@@ -180,8 +251,17 @@ p{
     height: 12px;
 }
 
+.spacerMedium {
+    height: 40px;
+}
+
 .spacerLarge {
     height: 60px;
+}
+
+.spacerWide {
+    width: 50%;
+    height: 100%;
 }
 
 .newFlexRow {
@@ -192,5 +272,9 @@ p{
 
 .pushBack {
     position: absolute;
-    z-index: -2;
+    z-index: -1;
+}
+
+.halfWidth {
+    width: 50%;
 }
