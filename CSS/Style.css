@@ -20,6 +20,7 @@ a { text-decoration: none; }
     text-decoration: none;
     align-self: flex-start;
     justify-self: flex-start;
+    max-width: fit-content;
 }
 
 .sectionTitle::after {
@@ -30,6 +31,21 @@ a { text-decoration: none; }
     left: 0;
     height: 2px;
     width: 100%;
+}
+
+#socialBar {
+    margin: 16px 8vw 0px 0px;
+}
+ 
+
+
+/* Skill Card Styles */
+
+#skillSection {
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin-top: 16px;
 }
 
 .skillCard {
@@ -53,8 +69,24 @@ a { text-decoration: none; }
     padding-right: 12px;
 }
 
+
+
+/* Case Study Styles */
+
 #caseStudySection {
-    width: 1000px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin-top: 16px;
+}
+
+.caseStudyImage {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 300px;
+    width: 900px;
 }
 
 .caseStudy {
@@ -64,6 +96,7 @@ a { text-decoration: none; }
     width: 900px;
     height: 215px;
     margin-bottom: 40px;
+    margin-top: 40px;
 }
 
 .caseStudyText {
@@ -77,22 +110,9 @@ a { text-decoration: none; }
     border: 2px solid transparent;
   }
 
-#skillSection {
-    justify-content: space-around;
-    flex-wrap: wrap;
-    max-width: 1100px;
-    margin-top: 16px;
-}
 
-#skillTitle {
-    max-width: fit-content;
-}
 
-#socialBar {
-    margin: 16px 8vw 0px 0px;
-}
- 
-/*These are typography styles*/
+/*Typography styles*/
 
 h1 {
     font-family: 'Spectral', serif;
@@ -143,7 +163,9 @@ p{
     font-size: 12px;
 }
 
-/*These are color styles*/
+
+
+/*Color styles*/
 
 .colorBright {
     color: rgba(242, 5, 116, 1);
@@ -173,7 +195,9 @@ p{
     color: rgba(29, 29, 29, 1);
 }
 
-/*These are Flexbox Styles*/
+
+
+/*Flexbox Styles*/
 
 .rowFlex {
     display: flex;
@@ -194,7 +218,9 @@ p{
     align-self: flex-end;
 }
 
-/* These are the spacing elements */
+
+
+/*Spacing Elements */
 
 .paddingMedium {
     padding: 12px;
