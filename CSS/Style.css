@@ -53,6 +53,30 @@ a { text-decoration: none; }
     padding-right: 12px;
 }
 
+#caseStudySection {
+    width: 1000px;
+}
+
+.caseStudy {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 900px;
+    height: 215px;
+    margin-bottom: 40px;
+}
+
+.caseStudyText {
+    width: 50%;
+}
+
+  .borderGradient{
+    background: linear-gradient(white, white) padding-box,
+                linear-gradient(to bottom, #F20574, #012845) border-box;
+    border-radius: 12px;
+    border: 2px solid transparent;
+  }
+
 #skillSection {
     justify-content: space-around;
     flex-wrap: wrap;
@@ -182,6 +206,11 @@ p{
 
 .spacerLarge {
     height: 60px;
+}
+
+.spacerWide {
+    width: 50%;
+    height: 100%;
 }
 
 .newFlexRow {
