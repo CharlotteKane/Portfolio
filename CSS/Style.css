@@ -12,7 +12,9 @@ header {
     padding: 4px;
 }
 
-a { text-decoration: none; }
+a { 
+    text-decoration: none; 
+}
 
 .sectionTitle {
     position:relative;
@@ -148,13 +150,7 @@ a { text-decoration: none; }
     background: linear-gradient(white, white) padding-box,
                 linear-gradient(to bottom, #F20574, #8C0343) border-box;
     border-radius: 12px;
-      border: 2px solid transparent;
-}
-
-.hoverStudy:hover .caseStudy{
-    background:  rgba(242, 5, 116, 0.126);
-    border-radius: 2px solid;
-    border-color:rgba(140, 3, 67, 1);
+    border: 2px solid transparent;
 }
 
 
@@ -391,4 +387,23 @@ p{
 
 .halfWidth {
     width: 50%;
+}
+
+
+
+/* hover states */
+
+.hoverStudy:hover .caseStudy{
+    background:  rgba(242, 5, 116, 0.05);
+    border: 4px solid;
+    border-color: #012845;
+    color: #012845;
+}
+
+.socialIcon:hover {
+    background: #012845;
+}
+
+a:hover {
+    color: #012845;
 }
