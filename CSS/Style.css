@@ -36,6 +36,12 @@ a { text-decoration: none; }
 #socialBar {
     margin: 16px 8vw 0px 0px;
 }
+
+.socialIcon {
+    margin: 12px;
+    background-color: #F20574;
+    border-radius: 8px;
+}
  
 #contentGrid {
     display: grid;
