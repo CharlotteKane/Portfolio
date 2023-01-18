@@ -126,9 +126,49 @@ a { text-decoration: none; }
 }
 
 .hoverStudy:hover .caseStudy{
-    background:  rgba(242, 5, 116, 0.06);
+    background:  rgba(242, 5, 116, 0.126);
     border-radius: 2px solid;
     border-color:rgba(140, 3, 67, 1);
+}
+
+
+
+/* Tech Skills Styles */
+
+#chipCloud {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 360px;
+}
+
+.chip {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2px 8px;
+    gap: 10px;
+    background: #F20574;
+    border-radius: 68px;
+    color: #F9FAFB;
+    margin: 0px 12px 10px 0px;
+}
+
+.circleSmall{
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+}
+
+#chipKey {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 360px;
 }
 
 
@@ -216,6 +256,18 @@ p{
     color: rgba(29, 29, 29, 1);
 }
 
+.blueBackground {
+    background: rgba(1, 40, 69, 1);
+}
+
+.maroonBackground {
+    background: #8C0343;
+}
+
+.pinkBackground {
+    background: #F20574;
+}
+
 
 
 /*Flexbox Styles*/
@@ -266,6 +318,9 @@ p{
 
 .newFlexRow {
     width: 100%;
+ }
+ 
+ .titlePadding {
     margin-left: 60px;
     margin-bottom: 24px;
 }
