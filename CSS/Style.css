@@ -23,6 +23,7 @@ a {
     align-self: flex-start;
     justify-self: flex-start;
     max-width: fit-content;
+    max-height: fit-content;
 }
 
 .sectionTitle::after {
@@ -55,16 +56,32 @@ a {
 .gridSpotTech {
     grid-column-start: 1;
     grid-row-start: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
 
 .gridSpotAbout {
     grid-column-start: 2;
     grid-row: 1 / span 2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
 
 .gridSpotSocial {
     grid-column-start: 1;
     grid-row-start: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+#endPage {
+    height: 120px;
 }
 
 /* Skill Card Styles */
@@ -153,7 +170,9 @@ a {
     border: 2px solid transparent;
 }
 
-
+.imageResize {
+    height: 275px;
+}
 
 /* Tech Skills Styles */
 
@@ -237,6 +256,7 @@ h3 {
     font-family: 'Spectral', serif;
     font-size: 24px;
     font-variant: small-caps;
+    margin: 0px;
 }
 
 h4 {
@@ -368,16 +388,16 @@ p{
 
 .spacerWide {
     width: 50%;
-    height: 100%;
+    /* height: 100%; */
 }
 
 .newFlexRow {
     width: 100%;
+    margin-bottom: 24px;
  }
  
 .titlePadding {
     margin-left: 60px;
-    margin-bottom: 24px;
 }
 
 .pushBack {
@@ -406,4 +426,130 @@ p{
 
 a:hover {
     color: #012845;
+}
+
+
+
+/* Responsive Elements */
+
+@media only screen and (max-width: 999px) {
+
+    /* General */
+    
+    p {
+        font-size: 18px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    [class*="newFlexRow"] {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    [class*="halfWidth"] {
+        width: 100%;
+    }
+
+    [class*="spacerWide"] {
+        width: 0px;
+    }
+
+    [class*="titlePadding"] {
+        margin-left: 0px;
+    }
+
+    [class*="spacerMedium"] {
+        width: 0px;
+        height: 0px;
+    }
+
+    [class*="spacerLarge"] {
+        height: 0px;
+    }
+    
+    [class*="mediaPad"] {
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-bottom: 32px;
+    }
+
+    [class*="mediaSpacer"] {
+        padding: 12px 24px 12px 24px;
+    }
+
+
+    /* Case Studies */
+
+    [id*="caseStudySection"] {
+        justify-content: center !important;
+        align-items: center;
+    }
+
+    [class*="caseStudyImage"] {
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 350px;
+        height: 375px !important;
+    }
+
+    [class*="imageResize"] {
+        height: 200px;
+    }
+
+    [class*="caseStudy"] {
+        width: 350px;
+        height: 300px;
+    }
+
+    [class*="caseStudyText"] {
+        width: 100%;
+        padding: 16px 16px 48px 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    /* About Me Grid */
+
+    [id*="contentGrid"] {
+        min-width: 450px !important;
+        grid-template-columns: 100% !important;
+        grid-template-rows: auto auto auto !important;
+        row-gap: 60px;
+        margin-bottom: 60px;
+    }
+
+    [class*="gridSpotTech"] {
+        grid-row: 1;
+        align-items: center;
+    }
+
+    [class*="gridSpotAbout"] {
+        grid-row: 2;
+        grid-column: 1;
+        align-items: center;
+    }
+
+    [class*="gridSpotSocial"] {
+        grid-row: 3;
+        align-items: center;
+    }
+
+    [id*="chipCloud"] {
+        justify-content: center !important;
+    }
+
+    [class*="centered"] {
+        text-align: center;
+    }
+
+    [class*="lineEnd"] {
+        margin-right: 0px;
+    }
 }
