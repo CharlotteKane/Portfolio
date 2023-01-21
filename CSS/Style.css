@@ -44,6 +44,13 @@ a {
     margin: 12px;
     background-color: #F20574;
     border-radius: 8px;
+    width: 42px;
+    height: 42px;
+}
+
+.headerImg {
+    margin-top: 28px;
+    width: 200px;
 }
  
 #contentGrid {
@@ -196,6 +203,7 @@ a {
     border-radius: 68px;
     color: #F9FAFB;
     margin: 0px 12px 10px 0px;
+    font-size: 18px !important;
 }
 
 .circleSmall {
@@ -210,6 +218,7 @@ a {
     justify-content: center;
     align-items: center;
     max-width: 345px;
+    font-size: 18px !important;
 }
 
 
@@ -409,6 +418,10 @@ p{
     width: 50%;
 }
 
+.nudgeLeft {
+    padding-left: 20px;
+}
+
 
 
 /* hover states */
@@ -438,6 +451,10 @@ a:hover {
     
     p {
         font-size: 18px;
+    }
+
+    .p2 {
+        font-size: 14px;
     }
 
     h2 {
@@ -482,6 +499,41 @@ a:hover {
         padding: 12px 24px 12px 24px;
     }
 
+    [class*="nudgeLeft"] {
+        padding-left: 38px;
+    }
+
+    [class*="mediaReduce"] {
+        width: 300px;
+        text-align: center;
+        line-height: 165.7%;
+    }
+
+    [class*="mediaCenter"] {
+        justify-content: center;
+    }
+
+    /* Header */
+
+    [class*="headerImg"] {
+        width: 125px;
+    }
+
+    [class*="socialIcon"] {
+        height: 36px;
+        width: 36px;
+    }
+
+    [class*="mediaRespond"] {
+        align-self: center;
+        margin: 0px !important;
+        padding-top: 240px;
+        z-index: 1;
+    }
+
+    [class*="bottomSpacer"] {
+        padding-bottom: 80px;
+    }
 
     /* Case Studies */
 
@@ -518,7 +570,7 @@ a:hover {
     /* About Me Grid */
 
     [id*="contentGrid"] {
-        min-width: 450px !important;
+        min-width: 350px !important;
         grid-template-columns: 100% !important;
         grid-template-rows: auto auto auto !important;
         row-gap: 60px;
@@ -534,6 +586,7 @@ a:hover {
         grid-row: 2;
         grid-column: 1;
         align-items: center;
+        min-width: 350px !important;
     }
 
     [class*="gridSpotSocial"] {
@@ -551,5 +604,17 @@ a:hover {
 
     [class*="lineEnd"] {
         margin-right: 0px;
+    }
+
+    [class*="secondarySocials"] {
+        display: flex;
+        justify-content: center;
+        width: 266px;
+    }
+
+    /* Skill Cards */
+    
+    [class*="skillCard"] {
+        width: 338px;
     }
 }
