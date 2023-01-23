@@ -606,6 +606,10 @@ a:hover {
         margin-right: 0px;
     }
 
+    [id*="aboutMe"] {
+        margin: 0px 4px 0px 4px !important;
+    }
+
     [class*="secondarySocials"] {
         display: flex;
         justify-content: center;
