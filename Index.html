@@ -13,24 +13,24 @@
     <main>
       <!-- header section -->
       <Header class="columnFlex">
-        <div id="socialBar" class="flexEnd pushBack">
+        <div id="socialBar" class="flexEnd pushBack mediaRespond">
           <a href="https://www.linkedin.com/in/charlotte-kane-06882475/" target="_blank" rel="noopener noreferrer">
-            <img src="./Assets/Social_LinkedIn.png" class="paddingMedium" alt="social icon link linked in" width="42" height="42">
+            <img src="./Assets/Social_LinkedIn.png" class="socialIcon" alt="social icon link linked in">
           </a>
           <a href="https://dribbble.com/CharlotteKane" target="_blank" rel="noopener noreferrer">
-            <img src="./Assets/Social_Dribbble.png" alt="social icon link dribbble" width="42" height="42" class="paddingMedium">
+            <img src="./Assets/Social_Dribbble.png" class="socialIcon" alt="social icon link dribbble">
           </a>
           <a href="https://www.behance.net/charlottekane1" target="_blank" rel="noopener noreferrer">
-            <img src="./Assets/Social_Behance.png" alt="social icon link behance" width="42" height="42" class="paddingMedium">
+            <img src="./Assets/Social_Behance.png" class="socialIcon" alt="social icon link behance">
           </a>
           <a href="mailto: ckane003@gmail.com">
-            <img src="./Assets/Social_Mail.png" alt="social icon link email" width="42" height="42" class="paddingMedium">
+            <img src="./Assets/Social_Email.png" class="socialIcon" alt="social icon link email">
           </a>
         </div>
-        <div class="columnFlex">
+        <div class="columnFlex bottomSpacer">
           <div class="rowFlex">
-            <p class="p2 colorBright flexEnd" style="padding-left: 24px;">(She/Her)</p>
-            <img src="./Assets/HeaderImg.png" alt="Charlotte Kane photo with polyhedral dice circle" style="margin-top: 28px;" width="200" height="198.07">
+            <p class="p2 colorBright flexEnd nudgeLeft">(She/Her)</p>
+            <img src="./Assets/HeaderImg.png" alt="Charlotte Kane photo with polyhedral dice circle" class=headerImg>
             <p class="p2 colorBright flexEnd" style="width: 100px;">(Total Nerd)</p>
           </div>
           <div class="columnFlex">   
@@ -96,7 +96,7 @@
         </div>
       </section>
       <!-- case study section -->
-      <section class="columnFlex">
+      <section class="columnFlex mediaPad">
         <div class="spacerLarge"></div>
           <div class="rowFlex" id="caseStudySection">
             <div class="newFlexRow">
@@ -104,13 +104,15 @@
                 <h3>Things I've Done</h3>
               </div>
             </div>
-            <div class="rowFlex hoverStudy">
+            <div class="rowFlex hoverStudy mediaSpacer">
+              <a href="https://www.behance.net/gallery/159153775/Morbid-Sauce" target="_blank" rel="noopener noreferrer">
               <div class="caseStudyImage">
                 <div class="halfWidth rowFlex">
-                  <img src="./Assets/CaseStudyImg_Morbid.png" height="275px">
+                  <img src="./Assets/CaseStudyImg_Morbid.png" class="imageResize">
                 </div>
                 <div class="spacerWide"></div>
               </div>
+              </a>
               <div class="caseStudy borderGradient pushBack">
                 <div class="spacerWide"></div>
                 <div class="caseStudyText">
@@ -118,16 +120,19 @@
                   <p>A Freelance Web Design Project</p>
                   <p>November, 2022</p>
                 </div>
+              </a>
               </div>
             </div>
             <div class="spacerMedium newFlexRow"></div>
-            <div class="rowFlex hoverStudy">
+            <div class="rowFlex hoverStudy mediaSpacer">
+              <a href="https://www.behance.net/gallery/159232969/Santa-Tim-in-OC" target="_blank" rel="noopener noreferrer">
               <div class="caseStudyImageFlip">
                 <div class="spacerWide"></div>
                 <div class="halfWidth rowFlex">
-                  <img src="./Assets/CaseStudyImg_Santa.png" height="275px">
+                  <img src="./Assets/CaseStudyImg_Santa.png" class="imageResize">
                 </div>
               </div>
+              </a>
               <div class="caseStudy borderGradient pushBack">
                 <div class="caseStudyTextFlip">
                   <h2 class="textBlack">Santa Tim in OC</h2>
@@ -138,13 +143,15 @@
               </div>
             </div>
           <div class="spacerMedium newFlexRow"></div>
-          <div class="rowFlex hoverStudy">
+          <div class="rowFlex hoverStudy mediaSpacer">
+            <a href="https://www.behance.net/gallery/160438961/IXL-Learning-App-UX-Case-Study" target="_blank" rel="noopener noreferrer">
             <div class="caseStudyImage">
               <div class="halfWidth rowFlex">
-                <img src="./Assets/CaseStudyImg_IXL.png" height="275px">
+                <img src="./Assets/CaseStudyImg_IXL.png" class="imageResize">
               </div>
               <div class="spacerWide"></div>
             </div>
+            </a>
             <div class="caseStudy borderGradient pushBack">
               <div class="spacerWide"></div>
               <div class="caseStudyText">
@@ -155,13 +162,15 @@
             </div>
           </div>
           <div class="spacerMedium newFlexRow"></div>
-          <div class="rowFlex hoverStudy">
+          <div class="rowFlex hoverStudy mediaSpacer">
+            <a href="https://www.behance.net/gallery/160438563/Stream-Engine-UX-Case-Study" target="_blank" rel="noopener noreferrer">
             <div class="caseStudyImageFlip">
               <div class="spacerWide"></div>
               <div class="halfWidth rowFlex">
-                <img src="./Assets/CaseStudyImg_Stream.png" height="275px">
+                <img src="./Assets/CaseStudyImg_Stream.png" class="imageResize">
               </div>
             </div>
+            </a>
             <div class="caseStudy borderGradient pushBack">
               <div class="caseStudyTextFlip">
                 <h2 class="textBlack">Stream Engine</h2>
@@ -179,7 +188,7 @@
       <section class="columnFlex">
         <div id="contentGrid">
           <!-- tech skills section -->
-          <section class="columnLeftFlex gridSpotTech">
+          <section class="gridSpotTech">
             <div id="chipCloud">
               <div class="newFlexRow">
                 <div class="sectionTitle">
@@ -187,77 +196,77 @@
                 </div>
               </div>
               <div class="chip">
-                <p class="p2">Figma</p>
+                <p>Figma</p>
               </div>
               <div class="chip">
-                <p class="p2">Miro</p>
+                <p>Miro</p>
               </div>
               <div class="chip">
-                <p class="p2">InVision</p>
+                <p>InVision</p>
+              </div>
+              <div class="chip lineEnd">
+                <p>HTML</p>
               </div>
               <div class="chip">
-                <p class="p2">HTML</p>
+                <p>CSS</p>
               </div>
               <div class="chip">
-                <p class="p2">CSS</p>
+                <p>Illustrator</p>
+              </div>
+              <div class="chip lineEnd">
+                <p>Google Suite</p>
               </div>
               <div class="chip">
-                <p class="p2">Illustrator</p>
-              </div>
-              <div class="chip">
-                <p class="p2">Google Suite</p>
-              </div>
-              <div class="chip">
-                <p class="p2">Webflow</p>
+                <p>Webflow</p>
               </div>
               <div class="chip maroonBackground">
-                <p class="p2">Wordpress</p>
+                <p>Wordpress</p>
+              </div>
+              <div class="chip maroonBackground lineEnd">
+                <p>Photoshop</p>
               </div>
               <div class="chip maroonBackground">
-                <p class="p2">Photoshop</p>
-              </div>
-              <div class="chip maroonBackground">
-                <p class="p2">Javascript</p>
+                <p>Javascript</p>
               </div>
               <div class="chip blueBackground">
-                <p class="p2">After Effects</p>
+                <p>After Effects</p>
               </div>
-              <div class="chip blueBackground">
-                <p class="p2">XD</p>
+              <div class="chip blueBackground lineEnd">
+                <p>XD</p>
               </div>
             </div>
             <div id="chipKey">
               <div class="rowFlex paddingMedium">
                 <div class="circleSmall pinkBackground"></div>
-                <p class="p2">Proficient</p>
+                <p>Proficient</p>
               </div>
               <div class="rowFlex paddingMedium">
                 <div class="circleSmall maroonBackground"></div>
-                <p class="p2">Familiar</p>
+                <p>Familiar</p>
               </div>
               <div class="rowFlex paddingMedium">
                 <div class="circleSmall blueBackground"></div>
-                <p class="p2">Learning</p>
+                <p>Learning</p>
               </div>
             </div>
           </section>
           <!-- about me section -->
-          <section class="columnLeftFlex gridSpotAbout">
+          <section class="gridSpotAbout">
             <div id="aboutMe">
               <div class="newFlexRow">
                 <div class="sectionTitle">
                   <h3>A Little About Myself</h3>
                 </div>
               </div>
-              <p>I’m a budding UX Designer & Product Manager residing in Irvine, CA. I recently finished a UX/UI Bootcamp through the University of Arizona and have since been honing my skills with freelance projects.</p>
+              <p class="centered">I’m a budding UX Designer & Product Manager residing in Irvine, CA. I recently finished a UX/UI Bootcamp through the University of Arizona and have since been honing my skills with freelance projects.</p>
               <div class="spacerSmall"></div>
-              <p>When not combing through research data or drafting new prototypes, you might find me supporting live music at metal shows or chowing down on classic science fiction. My board game collection is approaching dragon-horde status.</p>
+              <p class="centered">When not combing through research data or drafting new prototypes, you might find me supporting live music at metal shows or chowing down on classic science fiction. My board game collection is approaching dragon-horde status.</p>
               <div class="spacerSmall"></div>
-              <p>I’m also the proud owner of the world’s most loveable feline, Jinx. This is indisputable.</p>
+              <p class="centered">I’m also the proud owner of the world’s most loveable feline, Jinx. This is indisputable.</p>
             </div>
           </section>
           <!-- secondary social bar -->
-          <section class="columnLeftFlex gridSpotSocial">
+          <section class="gridSpotSocial">
             <div class="spacerLarge"></div>
             <div class="spacerLarge"></div>
             <div id="socialSection">
@@ -266,18 +275,18 @@
                   <h3>Let's Geek Out Together</h3>
                 </div>
               </div>
-              <div>
+              <div class="secondarySocials">
                 <a href="https://www.linkedin.com/in/charlotte-kane-06882475/" target="_blank" rel="noopener noreferrer">
-                  <img src="./Assets/Social_LinkedIn.png"  alt="social icon link linked in" class="paddingSmall" width="42" height="42">
+                  <img src="./Assets/Social_LinkedIn.png" class="socialIcon" alt="social icon link linked in" width="42" height="42" style="margin-left: 0px; margin-top: 0px;">
                 </a>
                 <a href="https://dribbble.com/CharlotteKane" target="_blank" rel="noopener noreferrer">
-                  <img src="./Assets/Social_Dribbble.png" alt="social icon link dribbble" class="paddingSmall" width="42" height="42">
+                  <img src="./Assets/Social_Dribbble.png" class="socialIcon" alt="social icon link dribbble" width="42" height="42" style="margin-top: 0px;">
                 </a>
                 <a href="https://www.behance.net/charlottekane1" target="_blank" rel="noopener noreferrer">
-                  <img src="./Assets/Social_Behance.png" alt="social icon link behance" class="paddingSmall" width="42" height="42">
+                  <img src="./Assets/Social_Behance.png" class="socialIcon" alt="social icon link behance" width="42" height="42" style="margin-top: 0px;">
                 </a>
                 <a href="mailto: ckane003@gmail.com">
-                  <img src="./Assets/Social_Mail.png" alt="social icon link email" class="paddingSmall" width="42" height="42">
+                  <img src="./Assets/Social_Email.png" class="socialIcon" alt="social icon link email" width="42" height="42" style="margin-top: 0px;">
                 </a>
               </div>
               </div>
@@ -286,12 +295,11 @@
         </div>    
       </section>
       <div class="spacerLarge"></div>
-      <div class="columnFlex">
-        <p class="colorTextBlack">I coded this site myself. Feel free to
-        <a href="https://github.com/CharlotteKane/Portfolio" target="_blank" rel="noopener noreferrer" class="colorDaring" style="text-decoration: underline;">check it out</a> on Github!</p>
+      <div class="columnFlex mediaCenter">
+        <p class="colorTextBlack mediaReduce">I coded this site myself. Feel free to
+        <a href="https://github.com/CharlotteKane/Portfolio" target="_blank" rel="noopener noreferrer" class="colorBright" style="text-decoration: underline;">check it out</a> on Github!</p>
       </div>
-      <div class="spacerLarge"></div>
-      <div class="spacerLarge"></div>
+      <div id="endPage"></div>
     </main>
   </body> 
 </html>
